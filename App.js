@@ -1,21 +1,50 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDom from "react-dom";
 
-const parent = React.createElement(
-  "div",
-  { id: "parent" },
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "NAMASTE REACT "),
-    React.createElement("h2", {}, "i am h2 tag "),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", {}, "i am h1 tag "),
-    React.createElement("h2", {}, "i am h2 tag "),
-  ])
-);
+// React.createElement => object => HTMLElement(render)
 
-console.log(parent); //object
+// const heading = React.createElement(
+//   "h1",
+//   { id: "root" },
+//   "akshay saini reactjs "
+// );
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+// JSX (transpiled before  it reaches the JS Engine) - PRACEL - babel
 
-root.render(parent);
+//JSX =>Babel transpiles it to React.createElement => ReactElement - JS Object => HTML Element (render)
+
+// React Element
+
+const elem = (<h1>Initial component</h1>)
+
+
+
+const title =
+ ( <h1 className="sk2">
+    {elem}
+    react element</h1> )
+
+
+// const Number = 10000
+
+
+
+const HeadingComponent = () => {
+  return (
+    <div className="container">
+      {/* <Title /> */}
+     <h3> {Number}</h3>
+   {/* <h2>  {title} </h2> */}
+      <h1 className="heading"> functional component</h1>
+    </div>
+  );
+};
+
+
+
+
+
+
+
+const root = ReactDom.createRoot(document.getElementById("root"));
+root.render(<HeadingComponent/>);
