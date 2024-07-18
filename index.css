@@ -1,4 +1,43 @@
-
-#root{
-    color: rgb(28, 181, 201);
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
 }
+.logo {
+  width: 140px;
+}
+.nav-items > ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-items > ul > li {
+   padding: 30px;
+  
+}
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.res-card{
+    margin: 10px;
+    padding: 5Px;
+    background-color: #f0f0f0;
+    width: 150px;
+    height: 200px;
+    font-size: x-small;
+    box-sizing: border-box;
+}
+.res-card:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+.search{
+    padding: 10px;
+}
+.res-logo{
+    width: 100%;
+}
+
+
+
