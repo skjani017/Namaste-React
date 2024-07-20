@@ -20,13 +20,14 @@
     flex-wrap: wrap;
 }
 .res-card{
-    margin: 10px;
-    padding: 5Px;
+    margin: 18px;
+    padding: 10Px;
     background-color: #f0f0f0;
-    width: 150px;
-    height: 200px;
+    width: 200px;
+    height: 280px;
     font-size: x-small;
     box-sizing: border-box;
+   
 }
 .res-card:hover{
     border: 1px solid black;
